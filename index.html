@@ -1,0 +1,58 @@
+<body>
+  <div class="calculator">
+
+    <!-- 1 -->
+    <div class="line">
+      <div class="label-text">1. If base price is:</div>
+      <input type="number" id="basePrice" step="0.01" placeholder="0.00" />
+      <div class="label-text">Then taxed price is:</div>
+      <input type="text" id="taxedPrice" readonly placeholder="-" />
+    </div>
+
+    <!-- 2 -->
+    <div class="line">
+      <div class="label-text">2. If quantity is (in grams):</div>
+      <input type="number" id="quantity" placeholder="0" />
+      <div class="label-text">Then cost per gram is:</div>
+      <input type="text" id="costPerItem" readonly placeholder="-" />
+    </div>
+
+    <!-- 3 -->
+    <div class="line">
+      <div class="label-text">3. If base price and grams are given:</div>
+      <div class="label-text">Then retail price per gram is:</div>
+      <input type="text" id="retailPrice" readonly placeholder="-" />
+    </div>
+
+    <!-- 4 (was deleted) -->
+
+    <!-- 4 (now step 4 is this) -->
+    <div class="line">
+      <div class="label-text">4. If each RM8 pack is (grams):</div>
+      <input type="number" id="manualPackGrams" placeholder="e.g. 30" />
+      <div class="label-text">Then total pack(s) you can make:</div>
+      <input type="text" id="rm8Packs" readonly placeholder="-" />
+    </div>
+
+    <!-- 5 -->
+    <div class="line">
+      <div class="label-text">5. If you sell <span id="packText">-</span> pack(s) at RM8:</div>
+      <div class="label-text">Then total revenue is:</div>
+      <input type="text" id="totalRevenue" readonly placeholder="-" />
+    </div>
+
+    <!-- 6 -->
+    <div class="line">
+      <div class="label-text">6. If base price is given:</div>
+      <div class="label-text">Then profit is:</div>
+      <input type="text" id="profit" readonly placeholder="-" />
+    </div>
+
+    <div class="line">
+      <button id="clearButton">Clear All</button>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
